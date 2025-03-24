@@ -349,7 +349,7 @@ saveConfigBtn.addEventListener('click', async () => {
     };
     const thumbnailFile = thumbnailFileInput.files[0];
     if (thumbnailFile) {
-        if (thumbnailFile.size > 100 * 1024) {
+        if (thumbnailFile.size > 1024 * 1024) {
             showNotification('Thumbnail must be less than 100KB', true);
             return;
         }
